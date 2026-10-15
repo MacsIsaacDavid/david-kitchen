@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="David's Kitchen - Nigerian food and fast delivery.">
+  <title>David's Kitchen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <a class="logo" href="#home" aria-label="David's Kitchen">
+    <span class="logo-mark">DK</span>
+    <span><strong>DAVID'S</strong><small>KITCHEN</small></span>
+  </a>
+
+  <nav class="desktop-nav">
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#locations">Locations</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="header-actions">
+    <button class="icon-btn" aria-label="Account"><span>♙</span></button>
+    <button class="icon-btn cart-btn" id="cartOpenBtn" aria-label="Cart">
+      <span>🛒</span><b id="cartCount">0</b>
+    </button>
+    <button class="icon-btn mobile-only" id="menuBtn" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<div class="drawer-overlay" id="drawerOverlay">
+  <aside class="mobile-drawer">
+    <div class="drawer-top">
+      <a class="logo" href="#home">
+        <span class="logo-mark">G</span>
+        <span><strong>DAVID'S</strong><small>KITCHEN</small></span>
+      </a>
+      <button class="icon-btn" id="drawerClose">×</button>
+    </div>
+    <nav class="drawer-links">
+      <a href="#home">Home <span>›</span></a>
+      <a href="#menu">Menu <span>›</span></a>
+      <a href="#about">About Us <span>›</span></a>
+      <a href="#locations">Locations <span>›</span></a>
+      <a href="#offers">Special Offers <span>›</span></a>
+      <a href="#contact">Contact <span>›</span></a>
+      <button id="drawerCart">My Cart <span>›</span></button>
+    </nav>
+    <div class="drawer-social">◎　f　◉</div>
+  </aside>
+</div>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-image"></div>
+  <div class="hero-content">
+    <span class="eyebrow">DAVID'S KITCHEN</span>
+    <h1>Where <em>Taste</em><br>Meets The Myth.</h1>
+    <p>Authentic Nigerian flavours, made with love and delivered to you.</p>
+    <button class="hero-btn" id="heroOrder">ORDER NOW <span>→</span></button>
+  </div>
+</section>
+
+<section class="delivery-section">
+  <div class="delivery-copy">
+    <span class="red-label">FASTEST DELIVERY</span>
+    <h2>FASTEST DELIVERY<br>RIGHT TO YOUR<br><span>DOOR STEP.</span></h2>
+    <p>Hot, fresh and delicious meals delivered straight to your door.</p>
+  </div>
+  <div class="delivery-art">
+    <div class="speed-lines"></div>
+    <div class="bike">🛵</div>
+    <div class="delivery-badge">HOT<br><small>& FRESH</small></div>
+  </div>
+</section>
+
+<section class="section menu-section" id="menu">
+  <div class="section-head">
+    <div>
+      <span class="red-label">DISCOVER GOOD FOOD</span>
+      <h2>OUR MENU</h2>
+    </div>
+    <p>From classic Nigerian favourites to satisfying quick bites.</p>
+  </div>
+
+  <div class="categories" id="categories"></div>
+  <div class="food-grid" id="foodGrid"></div>
+</section>
+
+<section class="about section" id="about">
+  <div class="about-image">
+    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=85" alt="People enjoying a restaurant meal">
+  </div>
+  <div class="about-copy">
+    <span class="red-label">OUR STORY</span>
+    <h2>ABOUT DAVID'S KITCHEN</h2>
+    <p>David's Kitchen brings together delicious Nigerian meals, quality ingredients and warm hospitality. Whether you are grabbing breakfast, meeting friends or ordering dinner, we make every meal worth remembering.</p>
+    <p>Our goal is simple: great food, friendly service and convenient delivery.</p>
+    <a class="outline-btn" href="#contact">LEARN MORE →</a>
+  </div>
+</section>
+
+<section class="why section">
+  <div class="center-head">
+    <span class="red-label">THE DAVID'S KITCHEN DIFFERENCE</span>
+    <h2>WHY CHOOSE DAVID'S KITCHEN?</h2>
+  </div>
+  <div class="why-grid">
+    <article class="why-card"><div class="why-icon">⚡</div><h3>FAST DELIVERY</h3><p>Fresh meals delivered quickly.</p></article>
+    <article class="why-card"><div class="why-icon">✦</div><h3>QUALITY FOOD</h3><p>Delicious meals prepared with care.</p></article>
+    <article class="why-card"><div class="why-icon">◉</div><h3>FRESH INGREDIENTS</h3><p>Fresh ingredients prepared daily.</p></article>
+    <article class="why-card"><div class="why-icon">♡</div><h3>CUSTOMER SERVICE</h3><p>Friendly service whenever you need us.</p></article>
+  </div>
+</section>
+
+<section class="offers section" id="offers">
+  <div class="section-head">
+    <div><span class="red-label">DEALS & SAVINGS</span><h2>SPECIAL OFFERS</h2></div>
+  </div>
+  <div class="offers-grid">
+    <article class="offer-card offer-one"><div><span>BREAKFAST DEAL</span><h3>Start your morning right.</h3><a href="#menu">ORDER NOW →</a></div></article>
+    <article class="offer-card offer-two"><div><span>FAMILY COMBO</span><h3>Perfect for the whole family.</h3><a href="#menu">ORDER NOW →</a></div></article>
+    <article class="offer-card offer-three"><div><span>WEEKEND SPECIAL</span><h3>Enjoy something special this weekend.</h3><a href="#menu">ORDER NOW →</a></div></article>
+  </div>
+</section>
+
+<section class="locations section" id="locations">
+  <div class="center-head"><span class="red-label">FIND US</span><h2>OUR LOCATIONS</h2></div>
+  <div class="location-grid">
+    <article class="location-card"><div class="location-pin">⌖</div><h3>Port Harcourt</h3><p>David's Kitchen Way, GRA Phase 2</p><p>◷ 8:00 AM – 10:00 PM</p><a href="https://maps.google.com" target="_blank">GET DIRECTIONS →</a></article>
+    <article class="location-card"><div class="location-pin">⌖</div><h3>Lagos</h3><p>Adeola Odeku, Victoria Island</p><p>◷ 8:00 AM – 11:00 PM</p><a href="https://maps.google.com" target="_blank">GET DIRECTIONS →</a></article>
+    <article class="location-card"><div class="location-pin">⌖</div><h3>Abuja</h3><p>Wuse 2, Abuja</p><p>◷ 8:00 AM – 10:00 PM</p><a href="https://maps.google.com" target="_blank">GET DIRECTIONS →</a></article>
+  </div>
+</section>
+
+<section class="testimonials section">
+  <div class="center-head"><span class="red-label">CUSTOMER LOVE</span><h2>WHAT OUR CUSTOMERS SAY</h2></div>
+  <div class="review-row">
+    <article class="review-card"><div class="stars">★★★★★</div><p>"The food was amazing and delivery was very fast."</p><strong>— Amaka O.</strong></article>
+    <article class="review-card"><div class="stars">★★★★★</div><p>"David's Kitchen jollof is honestly one of my favourites."</p><strong>— Daniel E.</strong></article>
+    <article class="review-card"><div class="stars">★★★★★</div><p>"Clean, tasty and the service was excellent."</p><strong>— Chisom N.</strong></article>
+  </div>
+</section>
+
+<section class="gallery section">
+  <div class="center-head"><span class="red-label">FOLLOW THE FLAVOUR</span><h2>FOLLOW US</h2><p>@David's KitchenRestaurant</p></div>
+  <div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80" alt="Restaurant interior">
+    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80" alt="Food">
+    <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=700&q=80" alt="Meal">
+    <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=700&q=80" alt="Restaurant food">
+    <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=700&q=80" alt="Food table">
+    <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=700&q=80" alt="Restaurant meal">
+  </div>
+</section>
+
+<section class="contact section" id="contact">
+  <div class="contact-info">
+    <span class="red-label">GET IN TOUCH</span>
+    <h2>LET'S TALK.</h2>
+    <p>Have a question, suggestion or just want to say hello?</p>
+    <div class="contact-lines">
+      <div>☎ <span>+234 800 000 0000</span></div>
+      <div>✉ <span>hello@davidskitchen.ng</span></div>
+      <div>⌖ <span>Port Harcourt, Rivers State, Nigeria</span></div>
+      <div>◷ <span>Mon – Sun · 8:00 AM – 10:00 PM</span></div>
+    </div>
+  </div>
+
+  <form class="contact-form" id="contactForm">
+    <input required name="name" autocomplete="name" placeholder="Name">
+    <input required name="email" type="email" autocomplete="email" placeholder="Email">
+    <input name="phone" type="tel" autocomplete="tel" placeholder="Phone">
+    <textarea required name="message" placeholder="Message"></textarea>
+    <button class="red-btn">SEND MESSAGE →</button>
+  </form>
+</section>
+</main>
+
+<footer>
+  <div class="footer-main">
+    <div><a class="logo" href="#home"><span class="logo-mark">DK</span><span><strong>DAVID'S</strong><small>KITCHEN</small></span></a><p>Great Nigerian food.<br>Made with heart.</p></div>
+    <div><h4>COMPANY</h4><a href="#about">About Us</a><a href="#locations">Locations</a><a href="#contact">Contact</a><a href="#contact">Careers</a></div>
+    <div><h4>CUSTOMER SERVICE</h4><a href="#contact">FAQs</a><a href="#menu">Delivery</a><a href="#contact">Payment</a><a href="#contact">Privacy</a></div>
+    <div><h4>QUICK LINKS</h4><a href="#home">Home</a><a href="#menu">Menu</a><a href="#offers">Offers</a><a href="#menu">Order Now</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 David's Kitchen. All Rights Reserved.</span><div>◎　f　◉</div></div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/2348000000000?text=Hello%20David's Kitchen%20Restaurant!" target="_blank" aria-label="Chat on WhatsApp">
+  <span class="chat-tip">Chat with Us!</span>◉<b>1</b>
+</a>
+<button class="top-btn" id="topBtn">↑</button>
+
+<div class="cart-overlay" id="cartOverlay">
+  <aside class="cart-panel">
+    <div class="cart-head"><div><span class="red-label">YOUR ORDER</span><h2>Shopping Cart</h2></div><button class="icon-btn" id="cartClose">×</button></div>
+    <div id="cartContent"></div>
+  </aside>
+</div>
+
+<div class="checkout-overlay" id="checkoutOverlay">
+  <div class="checkout-modal">
+    <button class="icon-btn close-checkout" id="checkoutClose">×</button>
+    <div id="checkoutContent"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
